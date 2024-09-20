@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --bgpink: #fac8cb;
+  --thpink: #fa8389;
+  --gdark: #242424;
+  --glight: #9c9c9c;
+  --gmedium: #3a3939;
+  --thshadow: #fa83893a;
+
+  --secondary-font: "Inter", sans-serif;
+}
+
+/* #root{
+  background: var(--bgpink);
+} */
+
+
+.navs{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.navs ul li{
+  list-style-type: none;
+  float: left;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.content h1{
+  font-size: 5rem;
+  position: relative;
+}
+
+.content p{
+  font-family: "Montserrat", sans-serif;
+  width: 60%;
+  font-size: 1.2rem;
+}
+.mainimg{
+  position: absolute;
+  z-index: -1;
+  right: 2rem;
+  bottom: 0;
+  height: 100vh;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-top: 30px;
+}
+
+.content{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container{
+  /* outline: 2px solid black; */
+  width: 80vw;
+  height: 90vh;
+}
+
+.portfolio{
+  height: 100vh;
+  width: 100vw;
+  background: var(--bgpink);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio .bottom{
+  position: fixed;
+  bottom: 0;
+  height: 20vh;
+  /* outline: 1px solid black; */
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.bottombtn{
+  height: 100%;
+  /* width: 150px; */
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bottombtn:hover{
+  background: var(--glight);
+  color: white;
+}
+
+.bottombtn:not(:hover){
+  transition: background-color .8s ease;
+}
+
+.reusableNavs{
+  position: fixed;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.navigation{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.link:hover{
+  color: var(--gmedium);
+}
+
+.canvas{
+  height: 65vh;
+  width: 95%;
+  background: white;
+  margin-top: 10vh;
+  box-shadow: 0 0 1rem .5rem var(--thshadow);
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.dynamic{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.position{
+  height: 3px;
+  width: 30px;
+  background: var(--gmedium);
+  margin: 3px;
+}
+
+.indicator{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.right, .left{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  background: white;
+  color: var(--gdark);
+  box-shadow: 0 0 1rem .2rem #fa83892d;
+}
+
+.right:hover, .left:hover{
+  background: var(--thpink);
+}
+
+.right{
+  right: -20px;
+}
+
+.left{
+  left: -20px;
+}
+
+.work{
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  animation: appear 0.6s 1 ease;
+}
+
+.tools{
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  height: 100%;
+  gap: 1rem;
+  overflow-x: scroll;
+  animation: appear 0.6s 1 ease;
+}
+
+.set{
+  position: relative;
+  border: 2px solid var(--glight);
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.set h3{
+  position: absolute;
+  top: -12px;
+  background: white;
+  padding-inline: 3px;
+  left: 3px;
+}
+
+.subset{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subset img{
+  height: 100%;
+}
+
+::-webkit-scrollbar{
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+  height: 2px;
+  margin: 5px;
+  background: var(--thpink);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+  margin: 5px;
+  height: 2px;
+  margin-bottom: 5px;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 80%;
+  height: 80%;
+  animation: appear 0.6s 1 ease;
+}
+
+.myskills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.skill{
+  margin: 10px;
+  position: relative;
+  display: flex;
+  height: 50px;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.skill p{
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  background: white;
+}
+
+.skill img{
+  height: 100%;
+}
+
+.certificates{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  overflow: scroll;
+  animation: appear 0.6s 1 ease;
+}
+
+.certificate{
+  margin: 10px;
+  height: 50vh;
+  outline: 2px solid var(--glight);
+}
+
+.certificate img{
+  height: 100%;
+}
+
+.testimonials{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: appear 0.6s 1 ease;
+}
+
+.testimonial{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+}
+
+.comment{
+  font-size: 1.2rem;
+  margin: 8px;
+}
+
+.user{
+  font-size: .8rem;
+}
+.testimony{
+  font-size: .8rem;
+  margin: 8px;
+}
+
+.emblem{
+  background: var(--thpink);
+  box-shadow: 0 0 .5rem .2rem rgba(255, 192, 203, 0.265);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+.line{
+  height: 1px;
+  background: black;
+  width: 80%;
+}
+
+.contacts{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: appear 0.6s 1 ease;
+}
+
+.details{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.details ul li{
+  list-style-type: none;
+}
+
+.details a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  line-height: 2px;
+  margin: 10px;
+}
+
+.details a:hover{
+  color: var(--thpink);
+}
+
+.socials, .contact{
+  margin: 10px;
+}
+
+.contacts h2{
+  text-align: center;
+  margin: 10px;
+}
+
+.icons{
+  font-size: 1.5em;
+}
+.more{
+  font-size: .9em;
+  font-weight: bold;
+  margin: 5px;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes disappear{
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-10);
+  }
+}
+
+.leave{
+  animation: disappear .6s 1;
+  opacity: 0;
+}
+
+.active{
+  background: var(--thpink);
+}
+
+.carouselItem{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  animation: slideIn .6s 1 ease;
+}
+
+.carouselItem img{
+  height: 90%;
+  margin: 10px;
+}
+
+@keyframes slideIn{
+  0%{
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hireme{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background: white;
+  height: 350px;
+  width: 250px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.hireme input, textarea{
+  height: 30px;
+  width: 100%;
+  outline: 2px solid var(--glight);
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hireme textarea{
+  height: 140px;
+}
+
+.hireme .input{
+  margin: 10px;
+}
+
+.hireme form, .hireme .submit{
+  width: 100%;
+}
+
+.hireme form{
+  margin-top: 20px;
+}
+
+.hireme h2{
+  background: var(--bgpink);
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hireme h2 span{
+  height: 100%;
+  cursor: pointer;
+}
+
+.overlay{
+  background: rgba(0, 0, 0, 0.256);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  backdrop-filter: blur(10px);
+  z-index: 98;
+}

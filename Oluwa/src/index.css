@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  --bgpink: #fcc0c3;
+  --thpink: #fa8389;
+  --gdark: #242424;
+  --glight: #9c9c9c;
+  --gmedium: #3a3939;
+
+  --secondary-font: "Inter", sans-serif;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focusText{
+  color: var(--thpink);
+  font-weight: bold;
+}
+
+.content h1::before{
+  content: 'VA';
+  position: absolute;
+  color: var(--thpink);
+  font-size: 20rem;
+  top: -14rem;
+  z-index: -1;
+  opacity: 0.2;
+  font-family: var(--secondary-font);
+  
+}
+
+button{
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 120px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hotbtn{
+  background: var(--thpink);
+  outline: 2px solid var(--thpink);
+}
+.coldbtn{
+  background: transparent;
+  outline: 2px solid var(--glight);
+}
