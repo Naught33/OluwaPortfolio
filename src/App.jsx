@@ -1,5 +1,5 @@
 import './App.css';
-import Index from './components';
+import Index from './components/Index.jsx';
 import Portfolio from './components/portfolio';
 import Projects from './components/projects';
 import { useState } from 'react';
