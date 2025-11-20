@@ -1,7 +1,7 @@
-import BottomNavs2 from "./custom/Bottomnav2";
-import Navigation from "./custom/Navigation";
-import DynamicCanvas from "./custom/DynamicCanvas";
-import HireMe from "./hireme";
+import BottomNavs2 from "./custom/Bottomnav2.jsx";
+import Navigation from "./custom/Navigation.jsx";
+import DynamicCanvas from "./custom/DynamicCanvas.jsx";
+import HireMe from "./hireme.jsx";
 import { useState } from "react";
 
 

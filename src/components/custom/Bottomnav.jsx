@@ -1,4 +1,4 @@
-import BottomBtn from "./BottomBtn";
+import BottomBtn from "./Bottombtn.jsx";
 import { useState } from "react";
 
 function BottomNavs({ handleSelection }) {

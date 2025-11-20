@@ -1,9 +1,9 @@
-import Work from "../portfolio/Work";
-import Tools from "../portfolio/Toolkit";
-import Skills from "../portfolio/Skills";
-import Certificates from "../portfolio/certificates";
-import Testimonials from "../portfolio/Testimonials";
-import Contacts from "../portfolio/Contacts";
+import Work from "../portfolio/Work.jsx";
+import Tools from "../portfolio/Toolkit.jsx";
+import Skills from "../portfolio/Skills.jsx";
+import Certificates from "../portfolio/certificates.jsx";
+import Testimonials from "../portfolio/Testimonials.jsx";
+import Contacts from "../portfolio/Contacts.jsx";
 
 function Canvas({ selectedComponent }) {
   const renderComponent = () => {

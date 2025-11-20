@@ -1,7 +1,7 @@
-import BottomNavs from "./custom/bottomnav";
-import Navigation from "./custom/Navigation";
-import Canvas from "./custom/Canvas";
-import HireMe from "./hireme";
+import BottomNavs from "./custom/Bottomnav.jsx";
+import Navigation from "./custom/Navigation.jsx";
+import Canvas from "./custom/Canvas.jsx";
+import HireMe from "./hireme.jsx";
 import { useState } from "react";
 
 

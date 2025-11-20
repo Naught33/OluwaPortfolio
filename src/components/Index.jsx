@@ -1,9 +1,9 @@
 import React, { useState } from 'react';  // Import useState
 import '../index.css';
-import Navs from './custom/Navs';
-import CustomButton from './custom/button';
+import Navs from './custom/Navs.jsx';
+import CustomButton from './custom/Button.jsx';
 import { mainimg } from '../image_assets';
-import HireMe from './hireme';
+import HireMe from './hireme.jsx';
 
 function Index({ handleNavigation }) {
   // State to control the visibility of the HireMe form

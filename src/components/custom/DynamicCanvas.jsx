@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import DataCarousel from "../../DataCarousel";
-import Travel from '../projects/Travel';
-import EmailManagement from '../projects/Email';
-import Calendar from '../projects/Calendar';
-import Graphics from '../projects/Graphics';
-import Meeting from '../projects/Meeting';
-import Research from '../projects/Research';
-import Videos from '../projects/Videos';
+import DataCarousel from "../../DataCarousel.js";
+import Travel from '../projects/Travel.jsx';
+import EmailManagement from '../projects/Email.jsx';
+import Calendar from '../projects/Calendar.jsx';
+import Graphics from '../projects/Graphics.jsx';
+import Meeting from '../projects/Meeting.jsx';
+import Research from '../projects/Research.jsx';
+import Videos from '../projects/Videos.jsx';
 
 function DynamicCanvas({ selectedComponent }) {
     const renderComponent = () => {

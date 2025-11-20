@@ -1,4 +1,4 @@
-import CustomButton from "./button";
+import CustomButton from "./Button.jsx";
 
 function Navigation({destination, pageTitle, handleNavigation, toggleHireMeForm}){
     return(
