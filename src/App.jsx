@@ -1,7 +1,7 @@
 import './App.css';
 import Index from './components/Index.jsx';
-import Portfolio from './components/portfolio';
-import Projects from './components/projects';
+import Portfolio from './components/Portfolio.jsx';
+import Projects from './components/Projects.jsx';
 import { useState } from 'react';
 
 function App() {
