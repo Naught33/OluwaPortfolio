@@ -17,7 +17,7 @@ import customerSupport from './assets/images/projects/email/customersupport.png'
 import labeling from './assets/images/projects/email/labeling.png';
 import agenda from './assets/images/projects/meeting/agenda.png';
 import research from './assets/images/projects/research/research.png';
-import travelBudget from './assets/images/projects/travel/budget.png';
+import travelBudget from './assets/images/projects/Travel/budget.png';
 import travelDestination from './assets/images/projects/travel/destination.png';
 import travelFlight from './assets/images/projects/travel/flight.png';
 import travelItinerary from './assets/images/projects/travel/itinerary.png';
